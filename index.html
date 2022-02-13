@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>UI Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+<style>
+.row{width:100%; }
+.col{background:green; float:left; height:300px; width:300px; margin:10px 0px 0px 20px;}
+
+@media only screen and ( min-width: 600px) and ( max-width: 720px) {
+.col{background:blue; width:90%;}
+}
+@media only screen and ( min-width: 720px) and ( max-width: 840px) {
+.col{background:red; width:40%;}
+}
+
+@media only screen and ( min-width: 480px) and ( max-width: 600px) {
+.col{background:lightblue; width:80%;}
+}
+@media only screen and ( min-width: 360px) and ( max-width: 479px) {
+.col{background:purple; width:80%;}
+}
+
+</style>
+<script>
+alert(window.innerWidth);
+</script>
+</head>
+<body>
+<div class="row">
+<div class="col">DIV 1</div>
+<div class="col">DIV 1</div>
+<div class="col">DIV 1</div>
+<div class="col">DIV 1</div>
+</div>
+</body>
+</html>
